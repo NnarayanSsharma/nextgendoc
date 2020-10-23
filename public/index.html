@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" href="%PUBLIC_URL%/doctorlogo3.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -10,6 +10,16 @@
       content="Web site created using create-react-app"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -24,7 +34,7 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>NEXTGENDOC</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -39,5 +49,58 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script type="text/javascript">
+      (function (d, m) {
+        var kommunicateSettings = {
+          appId: "2f9894091878e14eac400c51ef04e0376",
+          popupWidget: true,
+          automaticChatOpenOnNavigation: true,
+          preLeadCollection: [
+            {
+              field: "Name", // Name of the field you want to add
+              required: true, // Set 'true' to make it a mandatory field
+              placeholder: "Enter your name", // add whatever text you want to show in the placeholder
+            },
+            {
+              field: "Email",
+              type: "email",
+              required: true,
+              placeholder: "Enter your email",
+            },
+            {
+              field: "Phone",
+              type: "number",
+              required: true,
+              element: "input", // Optional field (Possible values: textarea or input)
+              placeholder: "Enter your phone number",
+            },
+            {
+              field: "City",
+              required: true,
+              element: "input", // Optional field (Possible values: textarea or input)
+              placeholder: "Enter your state name",
+            },
+            {
+              field: "Note",
+              required: true,
+              element: "input", // Optional field (Possible values: textarea or input)
+              placeholder: "Type your question here",
+            },
+          ],
+        };
+        var s = document.createElement("script");
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+        var h = document.getElementsByTagName("head")[0];
+        h.appendChild(s);
+        window.kommunicate = m;
+        m._globals = kommunicateSettings;
+      })(document, window.kommunicate || {});
+    </script>
+    <script
+      src="https://kit.fontawesome.com/026c70376d.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

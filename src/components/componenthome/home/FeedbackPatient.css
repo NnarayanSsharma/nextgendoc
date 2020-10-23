@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+.testimonial {
+  font-family: "Open Sans", sans-serif;
+  border-left: 4px solid #3efa47;
+  box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.06);
+  padding: 30px 30px 30px 30px;
+  margin: 0 15px 30px 15px;
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+  /* background: rgb(27, 27, 223); */
+}
+.testimonial:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-top: 25px solid #3efa47;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  transform: rotate(-45deg);
+  transform-origin: 80% -30% 0;
+}
+
+.testimonial .description {
+  font-size: 15px;
+  font-style: italic;
+  color: #5f5757;
+  line-height: 25px;
+  margin-top: 15px;
+  text-align: justify;
+}
+.testimonial .title {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 700;
+  color: #d45113;
+  margin: 0;
+}
+.testimonial .post {
+  display: inline-block;
+  font-size: 1.2rem;
+  color: #d45113;
+}
+.owl-carousel {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.owl-theme .owl-controls .owl-page span {
+  border: 2px solid #3efa47;
+  background: #fff;
+  opacity: 1;
+}
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls .owl-page:hover span {
+  background: #3efa47;
+}
+@media only screen and (max-width: 760px) {
+  .testimonial {
+    padding: 20px;
+    text-align: center;
+  }
+  .testimonial .pic {
+    display: block;
+    position: static;
+    margin: 0 auto 15px;
+  }
+  .owl-carousel {
+    display: block;
+  }
+}

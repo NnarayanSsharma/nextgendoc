@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&display=swap"); */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.slogan {
+  width: 80%;
+  margin: 4rem auto;
+}
+
+.slogan > div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 14rem;
+  margin-bottom: 8rem;
+}
+.slogan > div > div {
+  height: 300px;
+  width: 100%;
+  /* border: 1px red solid; */
+  overflow: hidden;
+  /* background-color: rgb(253, 253, 253); */
+  /* -webkit-box-shadow: 2px 22px 16px -27px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 22px 16px -27px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 22px 16px -27px rgba(0, 0, 0, 0.75); */
+}
+.slogan > div > div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slogan > div > div img {
+  height: 100%;
+  width: 100%;
+}
+
+.slogan > div > div:nth-child(2) {
+  padding: 2rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.slogan > div > div:nth-child(2) h4 {
+  width: 80%;
+  font-family: "Open Sans", sans-serif;
+}
+
+.slogan > div:nth-child(even) div:nth-child(1) {
+  order: 1;
+}
+
+@media (max-width: 760px) {
+  .slogan > div {
+    display: block;
+    margin-top: 4rem;
+  }
+  .slogan > div:nth-child(even) div:nth-child(1) {
+    order: 0;
+  }
+  .slogan > div > div:nth-child(2) {
+    padding: 1rem;
+    /* background-color: rgb(253, 253, 253); */
+  }
+  .slogan > div > div {
+    height: 100%;
+    width: 100%;
+  }
+  .slogan > div > div:nth-child(2) h3 {
+    width: 100%;
+  }
+}

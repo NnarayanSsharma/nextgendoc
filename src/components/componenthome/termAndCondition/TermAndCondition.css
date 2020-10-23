@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+.term-and-condition-container {
+  width: 80%;
+  margin: 0 auto 3rem;
+}
+
+.term-and-condition-container h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  margin: 2rem auto;
+}
+
+.term-and-condition-container p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+.term-and-condition-container > div > div {
+  position: relative;
+  left: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.term-and-condition-container > div > div > ol > li > div {
+  position: relative;
+  left: 1.5rem;
+  width: 95%;
+}
+
+.term-and-condition-container > div > div ul {
+  list-style-type: circle;
+  text-align: justify;
+}
+
+.term-and-condition-container > div > div ol {
+  list-style-type: upper-roman;
+  text-align: justify;
+  font-size: 1.2rem;
+  width: 95%;
+}
+
+@media (max-width: 760px) {
+  .term-and-condition-container p {
+    text-align: left;
+    font-size: 0.9rem;
+  }
+  .term-and-condition-container > div > div ul {
+    text-align: left;
+    font-size: 0.8rem;
+  }
+
+  .term-and-condition-container > div > div ol {
+    text-align: left;
+    font-size: 0.8rem;
+  }
+}

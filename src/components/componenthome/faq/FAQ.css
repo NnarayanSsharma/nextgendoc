@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.faq .faq-heading {
+  margin-top: 2rem;
+  text-decoration: underline;
+  font-size: 4rem;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  color: #444;
+  text-shadow: 3px 0px 10px rgba(150, 150, 150, 1);
+}
+.faq .faq-show-big {
+  display: block;
+}
+.faq .faq-show-small {
+  display: none;
+}
+.faq h2 {
+  font-family: "Open Sans", sans-serif;
+  margin-top: 5rem;
+}
+.faq h2 {
+  text-decoration: underline;
+}
+p {
+  font-family: "Open Sans", sans-serif;
+}
+.faq-container {
+  width: 80%;
+  margin: 3rem auto;
+}
+
+.faq-content {
+  color: #fff;
+  width: 80%;
+  margin: 3rem auto;
+  padding: 3rem 0;
+}
+
+.faq-content > div {
+  margin-top: 5rem;
+  display: flex;
+}
+
+.faq-content > div > div {
+  margin-right: 1rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.faq-content > div > div img {
+  width: 100%;
+  height: 100%;
+}
+
+.faq-content > div {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.faq-container .faq-container-box {
+  margin-top: 1rem;
+}
+
+.faq-container .faq-container-box > div:nth-child(1) {
+  display: flex;
+}
+
+.faq-container .faq-container-box > div:nth-child(1) .faq-button {
+  border-radius: 50%;
+  border: 1px solid green;
+  box-shadow: none;
+}
+
+.faq-container .faq-container-box > div:nth-child(1) .faq-button:hover {
+  background: white;
+  color: green;
+}
+
+.faq-container .faq-container-box > div:nth-child(1) span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.faq > div:nth-child(5) a {
+  text-decoration: none;
+}
+
+@media (max-width: 760px) {
+  .faq .faq-show-big {
+    display: none;
+  }
+  .faq .faq-show-small {
+    display: block;
+  }
+}
