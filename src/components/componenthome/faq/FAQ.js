@@ -162,7 +162,7 @@ const FAQ = (props) => {
               <CardBody>
                 You can schedule an online
                 <Link to="/service/termandcondition"> appointment now</Link> or
-                call our office to schedule an appointment at +1 214 586 0895.
+                call our office to schedule an appointment at <a href="tel:+1-214-586-0895">1-214-586-0895.</a>
               </CardBody>
             </Card>
           </Collapse>
