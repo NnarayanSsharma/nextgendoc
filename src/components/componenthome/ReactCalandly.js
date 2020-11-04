@@ -11,7 +11,7 @@ class ReactCalandly extends Component {
   render(){
     return (
       <div>
-        <InlineWidget url="https://calendly.com/narayan707gaya" />
+        <InlineWidget url="https://calendly.com/nextgendoc" />
       </div>
     );
   }

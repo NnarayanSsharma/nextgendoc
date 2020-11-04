@@ -50,9 +50,9 @@ class Toolbar extends Component {
               <li onClick={this.toggle1} style={{ cursor: "pointer" }}>
                 Patient Login
               </li>
-              {/* <li>
+              <li>
                 <Link to="/reactcalandly">Appointment</Link>
-              </li> */}
+              </li>
             </ul>
           </div>
           <div className="toolbar_toggle-button">
