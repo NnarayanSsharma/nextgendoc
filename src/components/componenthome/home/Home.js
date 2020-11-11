@@ -70,14 +70,14 @@ class Home extends Component {
               necessary.
             </p>
             <div class="flex justify-start">
-              {/* <Link to="/service/termandcondition"> */}
+              <Link to="/reactcalandly">
               <button
                 class="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-700 rounded text-lg"
-                onClick={this.toggle1}
+                // onClick={this.toggle1}
               >
                 Get Treated Today
               </button>
-              {/* </Link> */}
+              </Link>
             </div>
           </div>
         </div>
