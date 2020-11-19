@@ -52,9 +52,15 @@
 }
 
 .toolbar_navigation-items ul li {
-  padding: 0 0.8rem;
+  padding: 0.5rem 0.8rem;
   font-weight: 600;
   font-size: 1.2rem;
+}
+
+.toolbar_navigation-items ul li.schedule-appointment {
+  /* background-color: rgb(96, 218, 255); */
+  background-color: rgb(255, 172, 17);
+  /* background-color: #ffa500; */
 }
 
 .toolbar_navigation-items a:hover,

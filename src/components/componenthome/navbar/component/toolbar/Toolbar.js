@@ -47,11 +47,13 @@ class Toolbar extends Component {
               <li>
                 <Link to="/faq">FAQ</Link>
               </li>
-              <li onClick={this.toggle1} style={{ cursor: "pointer" }}>
-                Patient Login
+              {/* onClick={this.toggle1} */}
+              <li  style={{ cursor: "pointer" }}>
+                
+                <Link to="/confirmappointment">Patient Login</Link>
               </li>
-              <li>
-                <Link to="/reactcalandly">Appointment</Link>
+              <li className="schedule-appointment">
+                <Link to="/reactcalandly">Schedule Appointment</Link>
               </li>
             </ul>
           </div>

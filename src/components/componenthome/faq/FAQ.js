@@ -21,6 +21,7 @@ const FAQ = (props) => {
   const [isOpen7, setIsOpen7] = useState(false);
   const [isOpen8, setIsOpen8] = useState(false);
   const [isOpen9, setIsOpen9] = useState(false);
+  const [isOpenState, setIsOpenState] = useState(false)
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -30,6 +31,13 @@ const FAQ = (props) => {
 
   const closeModel = () => {
     setIsOpen(false);
+  };
+
+  const toggle1 = () => {
+    setIsOpenState(!isOpenState);
+  };
+  const closeModel1 = () => {
+    setIsOpenState(false);
   };
 
   return (
@@ -161,7 +169,9 @@ const FAQ = (props) => {
             <Card>
               <CardBody>
                 You can schedule an online
-                <Link to="/service/termandcondition"> appointment now</Link> or
+                {/* <Link to="/service/termandcondition"> appointment now</Link>  */}
+                <span onClick={toggle} style={{color: "blue", cursor: "pointer"}}> appointment now </span>
+                or
                 call our office to schedule an appointment at <a href="tel:+1-214-586-0895">1-214-586-0895.</a>
               </CardBody>
             </Card>
@@ -247,7 +257,7 @@ const FAQ = (props) => {
           <Collapse isOpen={isOpen4}>
             <Card>
               <CardBody>
-                Yes, as long your connection is strong enough. It is recommended
+                Yes, as long as your connection is strong enough. It is recommended
                 that you have an internet speed of at least 15Mbps for upload
                 and 5Mbps for download. Don’t know your internet speed? Test
                 your internet speed for free{" "}
