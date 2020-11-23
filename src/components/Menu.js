@@ -8,6 +8,7 @@ import FAQ from "./componenthome/faq/FAQ";
 import TermAndCondition from "./componenthome/termAndCondition/TermAndCondition";
 import ConfirmAppointment from "./componenthome/home/ConfirmAppointment";
 import ReactCalandly from "./componenthome/ReactCalandly";
+import ConfirmAppointmentCalendly from "./componenthome/home/ConfirmAppointmentCalendly";
 
 export class Menu extends Component {
   render() {
@@ -28,6 +29,11 @@ export class Menu extends Component {
             exact
             path="/confirmappointment"
             component={ConfirmAppointment}
+          />
+          <Route
+            exact
+            path="/confirmappointmentcalendly"
+            component={ConfirmAppointmentCalendly}
           />
           <Route exact path="/reactcalandly" component={ReactCalandly} />
         </Switch>

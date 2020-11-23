@@ -48,7 +48,7 @@ class FooterHome extends Component {
               <a href="#">
                 <i class="fa fa-facebook"></i>
               </a>
-              <a href="#">
+              {/* <a href="#">
                 <i class="fa fa-twitter"></i>
               </a>
               <a href="#">
@@ -56,7 +56,7 @@ class FooterHome extends Component {
               </a>
               <a href="#">
                 <i class="fa fa-github"></i>
-              </a>
+              </a> */}
             </div>
           </div>
         </footer>

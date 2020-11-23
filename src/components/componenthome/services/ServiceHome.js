@@ -69,6 +69,12 @@ class ServiceHome extends Component {
   closeModel1 = () => {
     this.setState({ isOpen1: false });
   };
+  setModelClose = (data) => {
+    console.log(data)
+    if(!data){
+      this.setState({ isOpen1: false });
+    }
+  }
   render() {
     return (
       <div className="services">
@@ -552,6 +558,7 @@ class ServiceHome extends Component {
           isOpen1={this.state.isOpen1}
           toggle1={this.toggle1}
           closeModel1={this.closeModel1}
+          setModelClose={this.setModelClose}
         />
       </div>
     );

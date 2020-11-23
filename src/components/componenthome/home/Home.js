@@ -43,11 +43,20 @@ class Home extends Component {
   };
 
   toggle1 = () => {
-    this.setState({ isOpen1: !this.state.isOpen1 });
+    this.setState({ isOpen1: !this.state.isOpen1 }
+    );
+    
+    
   };
   closeModel1 = () => {
     this.setState({ isOpen1: false });
   };
+  setModelClose = (data) => {
+    console.log(data)
+    if(!data){
+      this.setState({ isOpen1: false });
+    }
+  }
   render() {
     return (
       <div className="home-page">
@@ -70,14 +79,12 @@ class Home extends Component {
               necessary.
             </p>
             <div class="flex justify-start">
-              <Link to="/reactcalandly">
               <button
-                class="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-700 rounded text-lg"
-                // onClick={this.toggle1}
+                className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-700 rounded text-lg"
+                onClick={this.toggle1}
               >
                 Get Treated Today
               </button>
-              </Link>
             </div>
           </div>
         </div>
@@ -206,7 +213,7 @@ class Home extends Component {
         <div>
           <FeedbackPatient />
         </div>
-        <div className="all-your-health bg-blue-700">
+        <div className="all-your-health bg-blue-700" id="allyourhealth">
           <AllYourHealth />
         </div>
         <div>
@@ -221,6 +228,7 @@ class Home extends Component {
           isOpen1={this.state.isOpen1}
           toggle1={this.toggle1}
           closeModel1={this.closeModel1}
+          setModelClose={this.setModelClose}
         />
       </div>
     );

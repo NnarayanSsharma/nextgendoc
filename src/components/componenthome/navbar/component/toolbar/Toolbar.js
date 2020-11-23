@@ -15,6 +15,12 @@ class Toolbar extends Component {
   closeModel1 = () => {
     this.setState({ isOpen1: false });
   };
+  setModelClose = (data) => {
+    console.log(data)
+    if(!data){
+      this.setState({ isOpen1: false });
+    }
+  }
   render() {
     return (
       <header className="toolbar">
@@ -35,25 +41,22 @@ class Toolbar extends Component {
               <li>
                 <Link to="/service">Services</Link>
               </li>
-              {/* <li>
-                <Link to="/">Learn</Link>
-              </li> */}
               <li>
                 <Link to="/about">About</Link>
               </li>
-              {/* <li>
-                <Link to="/">+1 (802) 277‑2569</Link>
-              </li> */}
               <li>
                 <Link to="/faq">FAQ</Link>
               </li>
-              {/* onClick={this.toggle1} */}
               <li  style={{ cursor: "pointer" }}>
-                
                 <Link to="/confirmappointment">Patient Login</Link>
               </li>
-              <li className="schedule-appointment">
-                <Link to="/reactcalandly">Schedule Appointment</Link>
+              <li 
+                className="schedule-appointment" 
+                onClick={this.toggle1} 
+                style={{cursor: "pointer"}}
+              >
+                <a href="#allyourhealth"></a>
+                  Schedule Appointment
               </li>
             </ul>
           </div>
@@ -65,6 +68,7 @@ class Toolbar extends Component {
           isOpen1={this.state.isOpen1}
           toggle1={this.toggle1}
           closeModel1={this.closeModel1}
+          setModelClose={this.setModelClose}
         />
       </header>
     );

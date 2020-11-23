@@ -39,6 +39,13 @@ const FAQ = (props) => {
   const closeModel1 = () => {
     setIsOpenState(false);
   };
+  const setModelClose = (data) => {
+    console.log(data)
+    if(!data){
+      setIsOpen(false);
+      // this.setState({ isOpen1: false });
+    }
+  }
 
   return (
     <div className="faq">
@@ -431,6 +438,7 @@ const FAQ = (props) => {
         isOpen1={isOpen}
         toggle1={toggle}
         closeModel1={closeModel}
+        setModelClose={setModelClose}
       />
     </div>
   );

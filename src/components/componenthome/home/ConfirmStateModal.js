@@ -26,7 +26,8 @@ class ConfirmStateModal extends Component {
   };
 
   render() {
-    console.log("confirm state modal");
+    // console.log("confirm state modal");
+    // console.log(this.props)
     return (
       <div>
         <div>
@@ -58,10 +59,11 @@ class ConfirmStateModal extends Component {
               </div>
             </ModalBody>
             <ModalFooter>
-              <Link to="/confirmappointment">
+              <Link to="/confirmappointmentcalendly">
                 <Button
                   color="primary"
                   disabled={this.state.city === "" ? true : false}
+                  onClick={()=>this.props.setModelClose(false)}
                 >
                   Confirm
                 </Button>

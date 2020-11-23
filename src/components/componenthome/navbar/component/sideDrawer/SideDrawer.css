@@ -27,6 +27,11 @@
 .side-drawer li {
   margin: 0.5rem 0;
 }
+
+.side-drawer li.schedule-appointment {
+  background-color: rgb(255, 172, 17);
+  padding: 1rem 0.5rem;
+}
 .side-drawer a {
   color: #333333;
   text-decoration: none;

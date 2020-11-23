@@ -13,6 +13,12 @@ class SideDrawer extends Component {
   closeModel1 = () => {
     this.setState({ isOpen1: false });
   };
+  setModelClose = (data) => {
+    console.log(data)
+    if(!data){
+      this.setState({ isOpen1: false });
+    }
+  }
   render(){
   let drawerClasses = "side-drawer";
   if (this.props.show) {
@@ -43,13 +49,23 @@ class SideDrawer extends Component {
         <li onClick={this.toggle1} style={{ cursor: "pointer" }}>
             <Link>Patient Login</Link>
         </li>
+        <li 
+          className="schedule-appointment" 
+          onClick={this.toggle1} 
+          style={{cursor: "pointer"}}>
+            {/* <Link to="/reactcalandly"> */}
+              Schedule Appointment
+            {/* </Link> */}
+        </li>
       </ul>
 
     </nav>
     <ConfirmStateModal
     isOpen1={this.state.isOpen1}
     toggle1={this.toggle1}
-    closeModel1={this.closeModel1} />
+    closeModel1={this.closeModel1}
+    setModelClose={this.setModelClose} 
+    />
     </React.Fragment>
   );}
 }
