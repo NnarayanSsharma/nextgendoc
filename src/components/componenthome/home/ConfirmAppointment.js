@@ -294,9 +294,15 @@ class ConfirmAppointment extends Component {
                 border: "0.2rem solid #333",
                 fontWeight: "700",
               }}
-              onClick={this.toggle1}
+              // onClick={this.toggle1}
             >
-              I Agree
+              <a
+                href="https://nextgendoc.prognocis.com/prognocis/nextgendocClinicIndex.html"
+                target="_"
+                style={{color: "#000", textDecoration: "none"}}
+              >
+                I Agree
+              </a>
             </button>
           </div>
         </div>
