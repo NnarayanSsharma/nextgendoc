@@ -74,7 +74,7 @@ class Home extends Component {
             </h1>
             <p class="mb-8 leading-relaxed">
               Get advice, prescriptions, XRs, and labs from Expert Board
-              Certified Doctors. You can use your local pharmacy or get a
+              Certified Doctors. You can use your local pharmacy or get 
               prescriptions by mail. Visits are affordable, no insurance is
               necessary.
             </p>
