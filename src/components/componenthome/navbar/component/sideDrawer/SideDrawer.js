@@ -46,8 +46,8 @@ class SideDrawer extends Component {
         <li>
           <Link to="/faq">FAQ</Link>
         </li>
-        <li onClick={this.toggle1} style={{ cursor: "pointer" }}>
-            <Link>Patient Login</Link>
+        <li style={{ cursor: "pointer" }}>
+            <Link to="/confirmappointment">Patient Login</Link>
         </li>
         <li 
           className="schedule-appointment" 

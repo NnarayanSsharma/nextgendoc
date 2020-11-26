@@ -41,7 +41,7 @@ class AboutHome extends Component {
           <div>
             <p>
               NextGenDoc is a modern, tech-enabled healthcare provider designed
-              from the ground up to put patient care first. For millions of
+              from the ground up to put patient care first. For many
               people, NextGenDoc is the trusted and familiar home where they
               know they will find a healing touch. Combining smart technology
               with knowledgeable trusted Physicians, we deliver a uniquely

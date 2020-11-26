@@ -26,8 +26,8 @@ class ConfirmStateModal extends Component {
   };
 
   render() {
-    console.log("confirm state modal");
-    console.log(this.props)
+    // console.log("confirm state modal");
+    // console.log(this.props)
     return (
       <div>
         <div>
