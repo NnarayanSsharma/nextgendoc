@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, useEffect } from "react";
 import { Route, Link, Switch } from "react-router-dom";
 import Home from "./componenthome/home/Home";
 import ServiceHome from "./componenthome/services/ServiceHome";
@@ -9,9 +9,19 @@ import TermAndCondition from "./componenthome/termAndCondition/TermAndCondition"
 import ConfirmAppointment from "./componenthome/home/ConfirmAppointment";
 import ReactCalandly from "./componenthome/ReactCalandly";
 import ConfirmAppointmentCalendly from "./componenthome/home/ConfirmAppointmentCalendly";
+import ReactGa from 'react-ga'
 
-export class Menu extends Component {
-  render() {
+const Menu = () => {
+
+  useEffect(() => {
+    ReactGa.initialize('G-BWJFFX0YN3')
+    
+    // to react page view
+    // ReactGa.pageview('/')
+    ReactGa.pageview(window.location.pathname + window.location.search)
+
+  }, [])
+
     return (
       <div>
         <Switch>
@@ -40,6 +50,19 @@ export class Menu extends Component {
       </div>
     );
   }
-}
+
 
 export default Menu;
+
+// import React from 'react'
+
+// function Menu() {
+//   return (
+//     <div>
+      
+//     </div>
+//   )
+// }
+
+// export default Menu
+
