@@ -14,7 +14,7 @@ import ReactGa from 'react-ga'
 const Menu = () => {
 
   useEffect(() => {
-    ReactGa.initialize('G-BWJFFX0YN3')
+    ReactGa.initialize('G-REFKBS1THK')
     
     // to react page view
     // ReactGa.pageview('/')
