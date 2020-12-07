@@ -13,14 +13,14 @@ import ReactGa from 'react-ga'
 
 const Menu = () => {
 
-  useEffect(() => {
-    ReactGa.initialize('G-REFKBS1THK')
+  // useEffect(() => {
+  //   ReactGa.initialize('G-REFKBS1THK')
     
-    // to react page view
-    // ReactGa.pageview('/')
-    ReactGa.pageview(window.location.pathname + window.location.search)
+  //   // to react page view
+  //   ReactGa.pageview('/')
+  //   // ReactGa.pageview(window.location.pathname + window.location.search)
 
-  }, [])
+  // }, [])
 
     return (
       <div>
