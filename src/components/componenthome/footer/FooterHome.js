@@ -45,7 +45,7 @@ class FooterHome extends Component {
 
           <div class="footer-right">
             <div class="footer-icons">
-              <a href="#">
+              <a href="https://m.facebook.com/nextgendoc.N/" target="_">
                 <i class="fa fa-facebook"></i>
               </a>
               {/* <a href="#">

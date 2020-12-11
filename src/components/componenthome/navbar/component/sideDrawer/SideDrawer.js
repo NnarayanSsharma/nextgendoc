@@ -47,7 +47,8 @@ class SideDrawer extends Component {
           <Link to="/faq">FAQ</Link>
         </li>
         <li style={{ cursor: "pointer" }}>
-            <Link to="/confirmappointment">Patient Login</Link>
+            <a href="https://nextgendoc.prognocis.com/prognocis/nextgendocClinicIndex.html" target="_">Patient Login</a>
+            {/* <Link to="/confirmappointment">Patient Login</Link> */}
         </li>
         <li 
           className="schedule-appointment" 

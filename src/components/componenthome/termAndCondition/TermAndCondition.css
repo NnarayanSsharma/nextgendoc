@@ -12,7 +12,7 @@
 
 .term-and-condition-container p {
   font-family: "Open Sans", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   text-align: justify;
 }
 
@@ -36,18 +36,18 @@
 .term-and-condition-container > div > div ol {
   list-style-type: upper-roman;
   text-align: justify;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   width: 95%;
 }
 
 @media (max-width: 760px) {
   .term-and-condition-container p {
     text-align: left;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   .term-and-condition-container > div > div ul {
     text-align: left;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 
   .term-and-condition-container > div > div ol {
