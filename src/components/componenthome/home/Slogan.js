@@ -40,7 +40,7 @@ const Slogan = () => {
           </div>
           <div>
             <h4>
-              Easy access to medical records through HIPPA compliant patient
+              Easy access to medical records through HIPAA compliant patient
               portals.{" "}
             </h4>
           </div>
@@ -50,7 +50,7 @@ const Slogan = () => {
             <img src={secureprivate} />
           </div>
           <div>
-            <h4>Secure, private, HIPPA compliant video conferencing.</h4>
+            <h4>Secure, private, HIPAA compliant video conferencing.</h4>
           </div>
         </div>
       </div>
